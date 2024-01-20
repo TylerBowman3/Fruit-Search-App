@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins','sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(217, 145, 228), rgb(73, 204, 237));
+  color: rgb(7, 44, 112);
+  min-height: 100vh;
+}
+
+#fruit {
+  width: 400px;
+  border-radius: 5px;
+  height: 50px;
+  background: rgb(239, 205, 228);
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+  max-width: 75vw;
+  min-width: 10vw;
+  padding: 0px 0px 0px 10px;
+}
+
+.search-container {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15px);
+}
+
+.suggestions ul li:hover{
+  background-color: purple;
+}
+/* .suggestions ul {
+  padding: 15px 10px;
+  margin: 0;
+}
+
+.suggestions ul li {
+  list-style-type: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  width: 400px;
+}
+
+.suggestions ul li:hover {
+  background-color: rgb(50, 30, 50);
+} */
