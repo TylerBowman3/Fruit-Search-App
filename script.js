@@ -26,6 +26,13 @@ function showDropDown() {
     }
 }
 
+function useSuggestion(e) {
+	input.value = e.target.innerText;
+}
+
 
 input.addEventListener('keyup', showDropDown);
-// suggestions.addEventListener('click', useSuggestion);
+suggestions.addEventListener('click', useSuggestion);
+document.addEventListener('click',() => {
+	suggestions.innerHTML = '';
+});
