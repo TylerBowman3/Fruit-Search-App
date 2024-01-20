@@ -15,11 +15,10 @@ function search() {
 	return results;
 }
 
-function showDropDown (inputVal) {
+function showDropDown(inputVal) {
 	const results = search();
 	const ul = document.querySelector('ul');
 	for (let result of results) {
-	clearSuggestion();
 	if (inputVal !== '') {
 		let li = document.createElement('li');
 		li.innerHTML = '<li>' + "</li>";
@@ -30,47 +29,5 @@ function showDropDown (inputVal) {
 	}
 }
 
-function clearSuggestion() {
-	input.className = '';
-	suggestions.className = '';
-	suggestions.innerHTML = '';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function searchHandler(e) {
-// 	suggestions.innerHTML = "";
-// 	let results = search(e.target.value);
-// 	showSuggestions(results, e.target.value.toLowerCase());
-// }
-
-// function showSuggestions(results, inputVal) {
-// 	search();
-// }
-
-// function useSuggestion(e) {
-// 	input.value = e.target.innerText;
-// 	suggestions.innerHTML = "";
-// }
 
 input.addEventListener('keyup', showDropDown);
-// suggestions.addEventListener('click', useSuggestion);
